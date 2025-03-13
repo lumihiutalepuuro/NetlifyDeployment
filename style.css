@@ -1,0 +1,78 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Input and Button Styles */
+#taskInput {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error Message Styling */
+#error-message {
+    color: red;
+    font-size: 14px;
+    height: 20px;
+}
+
+/* Red Border for Invalid Input */
+.invalid {
+    border: 2px solid red;
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Task List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Task Styling */
+li {
+    background: white;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+
+/* Dragging effect */
+li.dragging {
+    opacity: 0.5;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Controls section */
+.controls {
+    margin: 10px;
+}

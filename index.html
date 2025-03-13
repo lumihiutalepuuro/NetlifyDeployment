@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">    <!--- here are the linking to styling things and functionalities -->
 </head>
 <body>
-    <h1>This is heading for Netlify deployment</h1>
-    <h2>Netlify</h2>
-    <h3>Is on</h3>
-    <h4>yesss</h4>
-    <p>Netlify is a great tool for deployment</p>
-    
+    <h1>To-Do List</h1> <!--- heading of the page -->   
+           <!--- input field for the task to be added -->
+    <input type="text" id="taskInput" placeholder="Enter a new task...">
+    <button onclick="addTask()">Add Task</button>
+    <p id="error-message"></p> <!--- error message if the input field is empty -->
+
+    <!-- Filter and visibility options -->
+    <div class="controls">
+        <label for="filter">Filter:</label>
+        <select id="filter" onchange="filterTasks()">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+        </select>
+        <button onclick="toggleVisibility()">Toggle List</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Task Counter -->
+    <p id="taskCounter">0 tasks remaining</p>
+
+    <script src="script.js"></script>
 </body>
 </html>
